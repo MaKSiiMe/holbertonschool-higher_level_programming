@@ -9,3 +9,4 @@ if __name__ == "__main__":
         sum += int(argv[i])
 
     print("{}".format(sum))
+    
