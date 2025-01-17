@@ -2,11 +2,10 @@
 from sys import argv
 
 if __name__ == "__main__":
-    argc = len(argv) - 1
+    argc = len(argv)
     sum = 0
 
-    for i in range(1, argc + 1):
+    for i in range(1, argc):
         sum += int(argv[i])
 
-    print("{}".format(sum))
-    
+    print(sum)
