@@ -1,10 +1,9 @@
 #!/usr/bin/python3
-
 def safe_print_list(my_list=[], x=0):
     i = 0
-    for i in range(x):
+    for j in range(x):
         try:
-            print("{:d}".format(my_list[i]), end="")
+            print("{}".format(my_list[j]), end="")
             i += 1
         except IndexError:
             break
