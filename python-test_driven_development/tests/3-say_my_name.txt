@@ -3,9 +3,9 @@
 >>> say_my_name("Maxime", "Truel")
 My name is Maxime Truel
 
->>> say_my_name("Maxime", "12")
+>>> say_my_name("12", "Truel")
 Traceback (most recent call last):
-last_name must be a string
+TypeError: first_name must be a string
 
 >>> say_my_name()
 Traceback (most recent call last):

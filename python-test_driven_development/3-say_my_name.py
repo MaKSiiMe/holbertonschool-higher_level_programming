@@ -14,7 +14,6 @@ def say_my_name(first_name, last_name=""):
         raise TypeError("last_name must be a string")
     if first_name.isdigit():
         raise TypeError("first_name must be a string")
-    if last_name.isdigit():
-        raise TypeError("last_name must be a string")
 
     print("My name is {} {}".format(first_name, last_name))
+    
