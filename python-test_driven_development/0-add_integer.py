@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 def add_integer(a, b=98):
     """Function that adds two integers"""
     if not isinstance(a, (int, float)):
