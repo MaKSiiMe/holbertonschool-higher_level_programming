@@ -1,6 +1,13 @@
 #!/usr/bin/python3
+"""
+Module that defines a class Square
+"""
+
 
 class Square:
+    """
+    Class that defines a square
+    """
     def __init__(self, size=0):
         self.__size = size
 
@@ -10,7 +17,7 @@ class Square:
 
     @size.setter
     def size(self, value):
-        if type(value) != int:
+        if not isinstance(value, int):
             raise TypeError("size must be an integer")
         if value < 0:
             raise ValueError("size must be >= 0")
