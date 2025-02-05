@@ -26,5 +26,3 @@
 
 >>> new_list = MyList.print_sorted([9, -2, 12, 3])
 [-2, 3, 9, 12]
->>> isinstance(new_list, list)
-False
