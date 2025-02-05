@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 
+""" Module that defines a function that returns the
+    list of available attributes and methods of an object"""
+
+
 Rectangle = __import__('9-rectangle').Rectangle
 
 

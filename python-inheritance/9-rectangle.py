@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 
+""" Module that defines a function that returns the
+    list of available attributes and methods of an object"""
+
+
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
