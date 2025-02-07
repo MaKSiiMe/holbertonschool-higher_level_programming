@@ -7,6 +7,7 @@ class Fish:
     def habitat(self):
         print("The fish lives in water")
 
+
 class Bird:
     def fly(self):
         print("The bird is flying")
