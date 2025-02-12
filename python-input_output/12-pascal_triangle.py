@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """module to generate pascal triangle"""
 
+
 def pascal_triangle(n):
     """function to generate pascal triangle"""
     if n <= 0:
