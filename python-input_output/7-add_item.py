@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""module to add item to a list"""
 
 import sys
 import os.path
