@@ -9,6 +9,7 @@ load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 
 
 def add_item():
+    """function to add item to a list"""
     filename = "add_item.json"
     if os.path.exists(filename):
         my_list = load_from_json_file(filename)
