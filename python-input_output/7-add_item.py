@@ -13,10 +13,8 @@ def add_item():
     filename = "add_item.json"
     if os.path.exists(filename):
         my_list = load_from_json_file(filename)
+        my_list.extend(sys.argv[1:])
     else:
-        my_list = []
-
-    for i in range(1, len(sys.argv)):
-        my_list.append(sys.argv[i])
+        my_list = sys.argv[1:]
 
     save_to_json_file(my_list, filename)
