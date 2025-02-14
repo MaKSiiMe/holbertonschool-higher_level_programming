@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 
-
 """This module is for creating custom objects and serializing them"""
 
 import pickle
@@ -14,15 +13,21 @@ class CustomObject:
         self.is_student = is_student
 
     def display(self):
-        print(f'Name: {self.name},
-              Age: {self.age},
-              Is student: {self.is_student}')
+        print("Name: {}".format(self.name))
+        print("Age: {}".format(self.age))
+        print("Is Student: {}".format(self.is_student))
 
     def serialize(self, filename):
-        with open(filename, 'wb') as file:
-            pickle.dump(self, file)
+        try:
+            with open(filename, "wb") as file:
+                pickle.dump(self, file)
+        except Exception as e:
+            return None
 
     @staticmethod
     def deserialize(cls, filename):
-        with open(filename, 'rb') as file:
-            return pickle.load(file)
+        try:
+            with open(filename, "rb") as file:
+                return pickle.load(file)
+        except Exception as e:
+            return None
