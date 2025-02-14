@@ -13,9 +13,8 @@ class CustomObject:
         self.is_student = is_student
 
     def display(self):
-        print("Name: {}".format(self.name))
-        print("Age: {}".format(self.age))
-        print("Is Student: {}".format(self.is_student))
+        for key, value in self.__dict__.items():
+            print("{}: {}".format(key, value))
 
     def serialize(self, filename):
         try:
@@ -24,7 +23,7 @@ class CustomObject:
         except Exception as e:
             return None
 
-    @staticmethod
+    @classmethod
     def deserialize(cls, filename):
         try:
             with open(filename, "rb") as file:
