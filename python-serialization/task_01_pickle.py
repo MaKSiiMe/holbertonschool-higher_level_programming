@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 
-"""This module is for creating custom objects and serializing them using pickle module"""
+"""This module is for creating custom objects and serializing them"""
 
 import pickle
 
