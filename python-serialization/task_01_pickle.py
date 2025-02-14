@@ -14,9 +14,9 @@ class CustomObject:
         self.is_student = is_student
 
     def display(self):
-        print(f'Name: {self.name},
-              Age: {self.age},
-              Is student: {self.is_student}')
+        print("Name: {}".format(self.name))
+        print("Age: {}".format(self.age))
+        print("Is Student: {}".format(self.is_student))
 
     def serialize(self, filename):
         with open(filename, 'wb') as file:
