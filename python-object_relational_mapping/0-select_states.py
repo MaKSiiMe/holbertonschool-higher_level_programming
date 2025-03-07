@@ -16,8 +16,8 @@ if __name__ == "__main__":
     )
 
     cursor = db.cursor()
-    cursor.execute("SELECT states.id, states.name"
-                   "FROM states"
+    cursor.execute("SELECT states.id, states.name "
+                   "FROM states "
                    "ORDER BY id ASC")
     rows = cursor.fetchall()
 

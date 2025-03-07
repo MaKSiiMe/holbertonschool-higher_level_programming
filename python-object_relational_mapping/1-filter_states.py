@@ -17,10 +17,10 @@ if __name__ == "__main__":
     )
 
     cursor = db.cursor()
-    cursor.execute("SELECT states.id, states.name"
-                   "FROM states"
-                   "WHERE states.name"
-                   "LIKE BINARY 'N%'"
+    cursor.execute("SELECT states.id, states.name "
+                   "FROM states "
+                   "WHERE states.name "
+                   "LIKE BINARY 'N%' "
                    "ORDER BY id ASC")
     rows = cursor.fetchall()
 
