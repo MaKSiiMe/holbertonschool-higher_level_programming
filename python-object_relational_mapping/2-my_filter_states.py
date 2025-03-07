@@ -20,8 +20,8 @@ if __name__ == "__main__":
     cursor.execute("SELECT states.id, states.name "
                    "FROM states "
                    "WHERE states.name "
-                   "LIKE BINARY %s "
-                   "ORDER BY states.id ASC", (sys.argv[4],))
+                   "LIKE BINARY '{}' "
+                   "ORDER BY states.id ASC".format(sys.argv[4]))
     rows = cursor.fetchall()
 
     for row in rows:
