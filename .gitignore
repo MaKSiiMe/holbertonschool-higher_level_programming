@@ -1,4 +1,5 @@
 *main.py
+*main.html
 __pycache__/
 *.json
-*.txt
+.gitignore
